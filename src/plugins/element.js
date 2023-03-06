@@ -1,5 +1,5 @@
 import Vue from "vue";
-import {Container, Aside,Header,Main,Submenu ,MenuItemGroup,MenuItem,Menu,Button,Dropdown,DropdownItem,DropdownMenu,RadioGroup,RadioButton,Col,Row,Card,Table,TableColumn,BreadcrumbItem,Breadcrumb,Tag,Form,FormItem,Input,Message}from 'element-ui';
+import {Container, Aside,Header,Main,Submenu ,MenuItemGroup,MenuItem,Menu,Button,Dropdown,DropdownItem,DropdownMenu,RadioGroup,RadioButton,Col,Row,Card,Table,TableColumn,BreadcrumbItem,Breadcrumb,Tag,Form,FormItem,Input,Message,Dialog,Select,Option,DatePicker, MessageBox}from 'element-ui';
 const element = {
     install:function (Vue) {
         Vue.use(Container)
@@ -27,7 +27,12 @@ const element = {
         Vue.use(Form)
         Vue.use(FormItem)
         Vue.use(Input)
+        Vue.use(Dialog)
+        Vue.use(Select)
+        Vue.use(Option)
+        Vue.use(DatePicker)
         Vue.prototype.$message = Message
+        Vue.prototype.$msgbox =  MessageBox
     }
 }
 
